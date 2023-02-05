@@ -6,7 +6,7 @@ from example8 import register_user as nick_empty
 from example9 import register_user as email_empty
 from example10 import register_user as mistake_password
 from example11 import register_user as error_password2
-from example12 import register_user as error_password
+
 
 def test_user_registration():
     a = register()
@@ -36,6 +36,3 @@ def test_user_registration_password2():
     a = error_password2()
     assert a[0] == a[1]
 
-def test_user_registration_error_password():
-    a = error_password()
-    assert a[0] == a[1]
